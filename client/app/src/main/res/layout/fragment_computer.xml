@@ -1,0 +1,98 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.kivanc.kontrolcepte.ComputerFragment"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="100dp"
+            android:paddingTop="200dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:padding="20dp"
+                android:requiresFadingEdge="none"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_mainpage" />
+
+            <ImageButton
+                android:id="@+id/btn_music"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:background="?android:selectableItemBackground"
+                app:srcCompat="@drawable/ic_music" />
+
+            <ImageButton
+                android:id="@+id/btn_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:background="?android:selectableItemBackground"
+                app:srcCompat="@drawable/ic_mail" />
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:background="?android:selectableItemBackground"
+                app:srcCompat="@drawable/ic_find" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_eject"
+                android:layout_width="98dp"
+                android:layout_height="82dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_cdrom_eject" />
+
+            <ImageButton
+                android:id="@+id/btn_shutdown"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_shutdown_button" />
+
+            <ImageButton
+                android:id="@+id/btn_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_restart" />
+
+        </LinearLayout>
+    </LinearLayout>
